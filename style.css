@@ -1,5 +1,6 @@
 #navBar {
     background-color: rgb(233, 203, 253);
+    height: 75px;
 }
 
 #sidebar {
@@ -12,6 +13,7 @@
 
 .flexRow {
     display: flex;
+    height: calc(100vh - 75px);
 }
 
 .flexColumn {
