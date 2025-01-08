@@ -5,17 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <div id="navBar">
-        navbar
-    </div>
-    <div class="flexRow">
-        <div id="sidebar">
-            sidebar
+
+    <div id="navBar" class="flexRow spaceBetween alignCenter">
+        <div class="flexRow">
+            <!--<i class="mdi mdi-food-croissant"></i>-->
+            <i class="material-icons">bakery_dining</i>
+            <h3 style="margin: 0;">Croissant</h3>
         </div>
-        <div id="main">
-            main
+
+        <div class="flexRow">
+            <span id="about">About</span>
+            <span id="content">Content</span>
+        </div>
+    </div>
+
+
+    <div class="flexRow" style="height: calc(100vh - var(--navBarHeight));">
+        <div id="sidebar" class="flexColumn">
+            <span>Breakfast</span>
+            <span>Lunch</span>
+            <span>Dinner</span>
+        </div>
+
+        <div id="main" class="flexRow wrap">
+            <div class="menuItem">
+                <img src="../assets/breakfastImages/bagel.jpg" width="100%">
+                <h4>Bagel</h4>
+                <p>Bagel with cream cheese</p>
+            </div>
+
+            <div class="menuItem">
+                <img src="../assets/breakfastImages/omelet.jpg" width="100%">
+                <h4>Omelet</h4>
+                <p>4 eggs omelet with cheese</p>
+            </div>
+
+            <div class="menuItem">
+                <img src="../assets/breakfastImages/pancakes.jpg" width="100%">
+                <h4>Pancakes</h4>
+                <p>Pancakes with honey</p>
+            </div>
         </div>
     </div>
 

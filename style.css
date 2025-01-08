@@ -1,19 +1,38 @@
+:root {
+    --navBarHeight: 75px;
+    --sideBarHeight: 200px;
+}
+
 #navBar {
-    background-color: rgb(233, 203, 253);
-    height: 75px;
+    background-color: rgb(129, 129, 129);
+    height: var(--navBarHeight);
+    padding: 20px;;
 }
 
 #sidebar {
-    background-color: rgb(102, 102, 139);
+    background-color: rgb(161, 161, 161);
+    width: var(--sideBarHeight);
+    padding: 10px;
 }
 
 #main {
-    background-color: rgb(145, 208, 219);
+    background-color: rgb(215, 215, 215);
+    width: calc(100vw - var(--sideBarHeight));
+    padding: 10px;
+}
+
+.menuItem {
+    width: 200px;
+    height: 250px;
+    margin: 10px;
 }
 
 .flexRow {
     display: flex;
-    height: calc(100vh - 75px);
+}
+
+#about {
+    margin-right: 10px;
 }
 
 .flexColumn {
@@ -43,6 +62,10 @@
 
 .justifyCenter {
     justify-content: center;
+}
+
+.justifyCenter {
+    align-items: center;
 }
 
 .alignCenter {
